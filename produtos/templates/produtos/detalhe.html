@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block 'body'%}
+
+        <h1>{{produto.prod_nome}}</h1>
+
+
+<form action="" method="POST">
+       {% csrf_token %}
+        {{compra.comp_quantidade}}
+         <input class="SignButton" type="Submit" value="Compra">
+</form>
+{%endblock%}

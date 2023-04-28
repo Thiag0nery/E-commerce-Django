@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block 'body'%}
+    {% for produto in Produtos%}
+         <a href="{% url 'produtos:detalhe' produto.prod_codigo%}">{{produto.prod_nome}}</a>
+    {%endfor%}
+{%endblock%}

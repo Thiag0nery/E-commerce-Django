@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block 'body'%}
+<main>
+    <register>
+        <div><!-- style="Margin-top: 120px" -->
+            <div style="display: flex; justify-content: center;">
+                <h1 style="margin-bottom: 10px; Color: #ffffff; font-size: 30px "> Register </h1>
+            </div>
+            <div class="gradiente"></div>
+
+            <form action="" method="POST">
+
+                {% csrf_token %}
+                <div class="RegisBox">
+                    <div class="TextoInput">
+                        <h4 style="color: white">Usuario</h4>
+                       {{ user.username }}
+                        <hr>
+
+                    </div>
+
+                    <div class="TextoInput">
+                        <h4 style="color: white">Email</h4>
+                        {{ user.email }}
+                        <hr>
+                    </div>
+
+                    <div class="TextoInput">
+                        <h4 style="color: white">Senha</h4>
+                        {{ user.password }}
+                        <hr>
+                    </div>
+
+
+
+                    <div class="TextoInput">
+                        <h4 style="color: white">Confirmar senha</h4>
+                        <input type="password" name="" id="" placeholder="">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="ButtonRegister">
+                    <input class="SignButton" type="Submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </register>
+
+    <video autoplay muted loop class="back_video">
+        <source src="/video/winter-river-campfire-snowfall-4k-live-wallpaper.mp4" type="video/mp4">
+    </video>
+</main>
+
+{% endblock%}

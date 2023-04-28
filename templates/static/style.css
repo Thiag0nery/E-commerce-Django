@@ -1,0 +1,203 @@
+{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+main {
+
+}
+
+/* Login */
+Login {
+    /* Definições */
+    width: 700px;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 70px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.InputLogin{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#id_username, #id_password {
+    height: 30px;
+    width: 375px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    background-color: transparent;
+}
+
+.ButtonLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.SignButton {
+    background-color: #FFA500;
+    width: 100px;
+    height: 43px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 16px;
+}
+.SignButton:hover {
+    background-color: #FFA500;
+    border: 0.5px solid white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.LoginButton {
+    background-color: white;
+    width: 100px;
+    height: 43px;
+    color: #FFA500;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: #0000003d 0px 3px 8px;
+    font-size: 16px;
+}
+
+.LoginButton:hover {
+    transition: 0.3s;
+    border: 0.5px solid  #FFA500;
+    transform: scale(1.05);
+}
+
+.ManterLogin {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 132px;
+    top: 10px;
+    color: #ffffff;
+
+}
+
+input[type=checkbox] {
+    /* Oculta o checkbox padrão */
+    display: none;
+}
+
+label {
+    /* Adiciona estilo básico para a etiqueta */
+    display: inline-block;
+    padding: 5px;
+    height: 5px;
+    width: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+}
+
+input[type=checkbox]:checked + label {
+    /* Estilo personalizado para o checkbox selecionado */
+    background-color: #ffc400;
+    color: #fff;
+}
+
+
+.back_video {
+    z-index: -1;
+    right: 0;
+    top: 0;
+
+    position: fixed;
+    object-fit: cover;
+    pointer-events: none;
+    width: 100%;
+    background-image: linear-gradient(black, transparent);
+}
+
+.gradiente{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+register {
+    /* Definições */
+    width: 700px;
+    min-height: 500px;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.RegisBox{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisBox .TextoInput input {
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 375px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+}
+
+.ButtonRegister{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /*
+    margin-top: 50px;
+    */
+}
+
+.SignButton {
+    background-color: #ffffff;
+    width: 100px;
+    height: 43px;
+    color: #FFA500;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 16px;
+}
+.SignButton:hover {
+    background-color: #FFA500;
+    color: white;
+    border: 0.5px solid white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}

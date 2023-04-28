@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block 'body'%}
+<main>
+    <Login>
+        <div style="Margin-top: 120px">
+            <div style="display: flex; justify-content: center;">
+                <h1 style="margin-bottom: 10px; Color: #ffffff; font-size: 30px "> Login </h1>
+            </div>
+            <div class="gradiente"></div>
+
+                    <form action="" method="POST">
+
+                        {% csrf_token %}
+                <div class="InputLogin">
+                    <div class="TextoInput">
+                        <h4 style="color: white">Usuário</h4>
+                        {{ user.username }}
+                        <hr>
+                    </div>
+
+                    <div class="TextoInput">
+                       <h4 style="color: white">Senha</h4>
+                        {{user.password}}
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="ManterLogin">
+                    <input type="checkbox" name="" id="CB">
+                    <label for="CB"></label>
+                    <p> Manter Login </p>
+                </div>
+
+                <div class="ButtonLogin">
+                    <input class="SignButton" type="Submit" value="Sign Up">
+                    <input class="LoginButton" type="Submit" value="Login in">
+                </div>
+            </form>
+
+
+        </div>
+    </Login>
+
+    <video autoplay muted loop class="back_video">
+        <source src="{% static 'lofi-japanese-style-room-day-time-HD-live-wallpaper.mp4' %}" type="video/mp4">
+    </video>
+</main>
+
+{% endblock%}
